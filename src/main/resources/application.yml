@@ -1,0 +1,14 @@
+spring:
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: http://127.0.0.1:8181/realms/Spring-connect
+          jwk-set-uri: http://127.0.0.1:8181/realms/Spring-connect/protocol/openid-connect/certs
+server:
+  port: 8081
+
+logging:
+  level:
+    root: DEBUG
+    org.springframework: DEBUG
